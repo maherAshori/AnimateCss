@@ -1,0 +1,113 @@
+<link href="/Content/css/bootstrap-rtl.css" rel="stylesheet" />
+<link href="/Content/animate.css" rel="stylesheet"/>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div class="col-md-8 text-center">
+        <div class="page-header">
+            <h1>ngAnimate Example</h1>
+        </div>
+
+        <h3 style="direction: ltr">{{animation}}</h3>
+        <hr/>
+        <input ng-animate="{{animation}}" ng-model="animation" class="form-control text-center" />
+        <input ng-animate="{{'bounce'}}" ng-model="animation2" class="form-control text-center" />
+    </div>
+    <div class="col-md-4">
+        <div class="page-header text-center">
+            <h1>animation list</h1>
+        </div>
+        <ul class="list-group text-left" style="height: 500px; overflow: auto">
+            <li class="list-group-item" ng-click="change('@bounce')"><code>bounce</code></li>
+            <li class="list-group-item" ng-click="change('flash')"><code>flash</code></li>
+            <li class="list-group-item" ng-click="change('pulse')"><code>pulse</code></li>
+            <li class="list-group-item" ng-click="change('rubberBand')"><code>rubberBand</code></li>
+            <li class="list-group-item" ng-click="change('shake')"><code>shake</code></li>
+            <li class="list-group-item" ng-click="change('swing')"><code>swing</code></li>
+            <li class="list-group-item" ng-click="change('tada')"><code>tada</code></li>
+            <li class="list-group-item" ng-click="change('wobble')"><code>wobble</code></li>
+            <li class="list-group-item" ng-click="change('bounceIn')"><code>bounceIn</code></li>
+            <li class="list-group-item" ng-click="change('bounceInDown')"><code>bounceInDown</code></li>
+            <li class="list-group-item" ng-click="change('bounceInLeft')"><code>bounceInLeft</code></li>
+            <li class="list-group-item" ng-click="change('bounceInRight')"><code>bounceInRight</code></li>
+            <li class="list-group-item" ng-click="change('bounceInUp')"><code>bounceInUp</code></li>
+            <li class="list-group-item" ng-click="change('bounceOut')"><code>bounceOut</code></li>
+            <li class="list-group-item" ng-click="change('bounceOutDown')"><code>bounceOutDown</code></li>
+            <li class="list-group-item" ng-click="change('bounceOutLeft')"><code>bounceOutLeft</code></li>
+            <li class="list-group-item" ng-click="change('bounceOutRight')"><code>bounceOutRight</code></li>
+            <li class="list-group-item" ng-click="change('bounceOutUp')"><code>bounceOutUp</code></li>
+            <li class="list-group-item" ng-click="change('fadeIn')"><code>fadeIn</code></li>
+            <li class="list-group-item" ng-click="change('fadeInDown')"><code>fadeInDown</code></li>
+            <li class="list-group-item" ng-click="change('fadeInDownBig')"><code>fadeInDownBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeInLeft')"><code>fadeInLeft</code></li>
+            <li class="list-group-item" ng-click="change('fadeInLeftBig')"><code>fadeInLeftBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeInRight')"><code>fadeInRight</code></li>
+            <li class="list-group-item" ng-click="change('fadeInRightBig')"><code>fadeInRightBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeInUp')"><code>fadeInUp</code></li>
+            <li class="list-group-item" ng-click="change('fadeInUpBig')"><code>fadeInUpBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeOut')"><code>fadeOut</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutDown')"><code>fadeOutDown</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutDownBig')"><code>fadeOutDownBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutLeft')"><code>fadeOutLeft</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutLeftBig')"><code>fadeOutLeftBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutRight')"><code>fadeOutRight</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutRightBig')"><code>fadeOutRightBig</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutUp')"><code>fadeOutUp</code></li>
+            <li class="list-group-item" ng-click="change('fadeOutUpBig')"><code>fadeOutUpBig</code></li>
+            <li class="list-group-item" ng-click="change('flipInX')"><code>flipInX</code></li>
+            <li class="list-group-item" ng-click="change('flipInY')"><code>flipInY</code></li>
+            <li class="list-group-item" ng-click="change('flipOutX')"><code>flipOutX</code></li>
+            <li class="list-group-item" ng-click="change('flipOutY')"><code>flipOutY</code></li>
+            <li class="list-group-item" ng-click="change('lightSpeedIn')"><code>lightSpeedIn</code></li>
+            <li class="list-group-item" ng-click="change('lightSpeedOut')"><code>lightSpeedOut</code></li>
+            <li class="list-group-item" ng-click="change('rotateIn')"><code>rotateIn</code></li>
+            <li class="list-group-item" ng-click="change('rotateInDownLeft')"><code>rotateInDownLeft</code></li>
+            <li class="list-group-item" ng-click="change('rotateInDownRight')"><code>rotateInDownRight</code></li>
+            <li class="list-group-item" ng-click="change('rotateInUpLeft')"><code>rotateInUpLeft</code></li>
+            <li class="list-group-item" ng-click="change('rotateInUpRight')"><code>rotateInUpRight</code></li>
+            <li class="list-group-item" ng-click="change('rotateOut')"><code>rotateOut</code></li>
+            <li class="list-group-item" ng-click="change('rotateOutDownLeft')"><code>rotateOutDownLeft</code></li>
+            <li class="list-group-item" ng-click="change('rotateOutDownRight')"><code>rotateOutDownRight</code></li>
+            <li class="list-group-item" ng-click="change('rotateOutUpLeft')"><code>rotateOutUpLeft</code></li>
+            <li class="list-group-item" ng-click="change('rotateOutUpRight')"><code>rotateOutUpRight</code></li>
+            <li class="list-group-item" ng-click="change('hinge')"><code>hinge</code></li>
+            <li class="list-group-item" ng-click="change('rollIn')"><code>rollIn</code></li>
+            <li class="list-group-item" ng-click="change('rollOut')"><code>rollOut</code></li>
+            <li class="list-group-item" ng-click="change('zoomIn')"><code>zoomIn</code></li>
+            <li class="list-group-item" ng-click="change('zoomInDown')"><code>zoomInDown</code></li>
+            <li class="list-group-item" ng-click="change('zoomInLeft')"><code>zoomInLeft</code></li>
+            <li class="list-group-item" ng-click="change('zoomInRight')"><code>zoomInRight</code></li>
+            <li class="list-group-item" ng-click="change('zoomInUp')"><code>zoomInUp</code></li>
+            <li class="list-group-item" ng-click="change('zoomOut')"><code>zoomOut</code></li>
+            <li class="list-group-item" ng-click="change('zoomOutDown')"><code>zoomOutDown</code></li>
+            <li class="list-group-item" ng-click="change('zoomOutLeft')"><code>zoomOutLeft</code></li>
+            <li class="list-group-item" ng-click="change('zoomOutRight')"><code>zoomOutRight</code></li>
+            <li class="list-group-item" ng-click="change('zoomOutUp')"><code>zoomOutUp</code></li>
+            <li class="list-group-item" ng-click="change('slideInDown')"><code>slideInDown</code></li>
+            <li class="list-group-item" ng-click="change('slideInLeft')"><code>slideInLeft</code></li>
+            <li class="list-group-item" ng-click="change('slideInRight')"><code>slideInRight</code></li>
+            <li class="list-group-item" ng-click="change('slideInUp')"><code>slideInUp</code></li>
+            <li class="list-group-item" ng-click="change('slideOutDown')"><code>slideOutDown</code></li>
+            <li class="list-group-item" ng-click="change('slideOutLeft')"><code>slideOutLeft</code></li>
+            <li class="list-group-item" ng-click="change('slideOutRight')"><code>slideOutRight</code></li>
+            <li class="list-group-item" ng-click="change('slideOutUp')"><code>slideOutUp</code></li>
+        </ul>
+    </div>
+</div>
+<div class="clearfix"></div>
+<hr/>
+<div class="well well-sm col-md-12 text-center">
+    <h3>source: <a href="http://daneden.github.io/animate.css/">animate.css</a></h3>
+</div>
+
+<script src="/Scripts/jquery-2.1.3.min.js"></script>
+<script src="/Scripts/angular.min.js"></script>
+<script src="/Scripts/angular-sanitize.min.js"></script>
+<script src="/ngAnimate.min.js"></script>
+<script type="text/javascript">
+    angular.module("myApp", ["AnimateCss"]).controller("myCtrl", function ($scope) {
+        $scope.animation = "@fadeIn";
+        $scope.change = function(x) {
+            $scope.animation = x;
+        }
+    });
+</script>
