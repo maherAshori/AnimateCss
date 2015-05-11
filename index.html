@@ -39,7 +39,7 @@
           <h1>
 <a id="nganimate" class="anchor" href="#nganimate" aria-hidden="true"><span class="octicon octicon-link"></span></a>ngAnimate</h1>
 
-<p><em>v1.0.0</em></p>
+<p><em>v1.3.0</em></p>
 
 <blockquote>
 <p>ngAnimate is simple Angular Directive, which you can easily use animateCss in your Pages 
@@ -56,9 +56,9 @@
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">ng-app</span>=<span class="pl-s"><span class="pl-pds">"</span>myApp<span class="pl-pds">"</span></span> <span class="pl-e">ng-controller</span>=<span class="pl-s"><span class="pl-pds">"</span>myCtrl<span class="pl-pds">"</span></span>&gt;
         &lt;<span class="pl-ent">label</span>&gt;Return Animation from your controller&lt;/<span class="pl-ent">label</span>&gt;
-        &lt;<span class="pl-ent">input</span> <span class="pl-e">ng-animate</span>=<span class="pl-s"><span class="pl-pds">"</span>{{animation}}<span class="pl-pds">"</span></span> <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>animation<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control text-center<span class="pl-pds">"</span></span> /&gt;
+        &lt;<span class="pl-ent">input</span> <span class="pl-e">ng-animate</span>=<span class="pl-s"><span class="pl-pds">"</span>{{animation}}<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control text-center<span class="pl-pds">"</span></span> /&gt;
         &lt;<span class="pl-ent">label</span>&gt;Return Animation directly&lt;/<span class="pl-ent">label</span>&gt;
-        &lt;<span class="pl-ent">input</span> <span class="pl-e">ng-animate</span>=<span class="pl-s"><span class="pl-pds">"</span>{{'bounce'}}<span class="pl-pds">"</span></span> <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>animation2<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control text-center<span class="pl-pds">"</span></span> /&gt;
+        &lt;<span class="pl-ent">input</span> <span class="pl-e">ng-animate</span>=<span class="pl-s"><span class="pl-pds">"</span>{{'bounce'}}<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control text-center<span class="pl-pds">"</span></span> /&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 <div class="highlight highlight-javaScript"><pre>    angular.module(<span class="pl-s"><span class="pl-pds">"</span>myApp<span class="pl-pds">"</span></span>, [<span class="pl-s"><span class="pl-pds">"</span>AnimateCss<span class="pl-pds">"</span></span>]).controller(<span class="pl-s"><span class="pl-pds">"</span>myCtrl<span class="pl-pds">"</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$scope</span>) {
