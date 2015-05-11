@@ -1,20 +1,14 @@
-angular.module("AnimateCss", ["ngSanitize"])
+angular.module("AnimateCss", [])
     .directive("ngAnimate", function () {
         "use strict";
         return {
             restrict: "A",
-            require: "^ngModel",
             scope: {
                 ngAnimate: "@"
             },
-            link: function (scope, element, attrs, ngModel) {
+            link: function (scope, element) {
                 var animation, oldV, newV;
-                ngModel.$render = function () {
-                    scope.ngAnimate = ngModel.$viewValue;
-                };
                 scope.$watch("ngAnimate", function (newValue, oldValue) {
-                    console.log(oldValue);
-                    console.log(newValue);
                     if (oldValue.charAt(0) === "@") {
                         oldV = "infinite " + oldValue.substring(1);
                     } else {
